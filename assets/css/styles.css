@@ -94,6 +94,10 @@ body {
   width: auto !important;
 }
 
+.width-50 {
+  width: 50% !important;
+}
+
 .width-33 {
   width: 33% !important;
 }
@@ -165,27 +169,33 @@ a {
 .left-bx {
   width: 30%;
 }
+
 .middle-bx {
   width: 40%;
 }
+
 .path {
-  fill: rgb(144,206,169);
+  fill: rgb(144, 206, 169);
 }
+
 .middle-bx strong {
-  color: rgb(144,206,169);
+  color: rgb(144, 206, 169);
 }
-.middle-bx:hover .path,
-.middle-bx:hover strong {
+
+.middle-bx:hover .path, .middle-bx:hover strong {
   fill: var(--white);
   color: var(--white);
 }
+
 .right-bx {
   width: 30%;
 }
+
 .middle-bx a {
   color: var(--white);
   font-size: 20px;
 }
+
 .middle-bx a strong {
   font-family: 'Courgette', cursive;
 }
@@ -246,7 +256,6 @@ a {
   visibility: hidden;
 }
 
-
 /*-------------------------------------------------------------------------------------------*/
 
 /*                                         Sub Header                                        */
@@ -254,12 +263,48 @@ a {
 /*-------------------------------------------------------------------------------------------*/
 
 .sub-header {
-  background: var(--primary-color);
+  width: 100%;
+  height: 40px;
+  padding: 8px 8px 0 8px;
   position: fixed;
-  top: 55px;
+  top: 40px;
   z-index: 999;
 }
 
+.header-input {
+  background: transparent;
+  width: 170px;
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 3px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-input:hover {
+  background: hsla(0, 0%, 100%, .2);
+}
+.header-input:focus {
+  background: var(--white);
+  color: var(--secondary-color);
+}
+
+.divider {
+  background: hsla(0, 0%, 100%, .3);
+  width: 1px;
+  height: 15px;
+  margin: 0 8px;
+  display: inline-block;
+}
+.arrow {
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  transform: rotate(-90deg);
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -389,12 +434,10 @@ button {
   background: hsla(0, 0%, 100%, .3);
   width: 32px;
   height: 32px;
-  line-height: 32px;
   border-radius: 3px;
   border: 0;
   color: var(--white);
   font-size: 14px;
-  font-weight: 700;
 }
 
 .btn-icon:hover {
@@ -420,6 +463,7 @@ button {
   border: none;
   color: var(--white);
 }
+
 .cursor-pointer {
   cursor: pointer;
 }
