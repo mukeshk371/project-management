@@ -43,6 +43,10 @@ body {
   background: transparent;
 }
 
+.body-div {
+  padding: 96px 4px 4px 4px;
+}
+
 /* Alignments */
 
 .text-left {
@@ -99,7 +103,15 @@ body {
 }
 
 .width-33 {
-  width: 33% !important;
+  width: 33.33% !important;
+}
+
+.width-20 {
+  width: 20% !important;
+}
+
+.width-25 {
+  width: 25% !important;
 }
 
 .width-inherit {
@@ -157,7 +169,8 @@ a {
 }
 
 .header {
-  background: rgba(0, 0, 0, .15);
+  /* background: rgba(0, 0, 0, .15); */
+  background: #4DA35C;
   width: 100%;
   height: 40px;
   padding: 0 4px;
@@ -263,9 +276,10 @@ a {
 /*-------------------------------------------------------------------------------------------*/
 
 .sub-header {
+  background: #5CC06C;
   width: 100%;
-  height: 40px;
-  padding: 8px 8px 0 8px;
+  height: 56px;
+  padding: 0 8px;
   position: fixed;
   top: 40px;
   z-index: 999;
@@ -287,6 +301,7 @@ a {
 .header-input:hover {
   background: hsla(0, 0%, 100%, .2);
 }
+
 .header-input:focus {
   background: var(--white);
   color: var(--secondary-color);
@@ -299,12 +314,14 @@ a {
   margin: 0 8px;
   display: inline-block;
 }
+
 .arrow {
   position: absolute;
   bottom: -3px;
   right: 0;
   transform: rotate(-90deg);
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -357,16 +374,20 @@ li a:hover:not(.active) svg, li a:hover:not(.active) img {
 /*-------------------------------------------------------------------------------------------*/
 
 .card {
-  background: var(--white);
-  border-radius: 10px;
+  background: #ebecf0;
+  border-radius: 3px;
   position: relative;
-  margin: 5px;
+  /* margin: 4px; */
   overflow: auto;
   /* transition: $transition; */
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card-header, .card-footer {
+.card.card-270 {
+  width: 270px;
+}
+
+/* .card-header, .card-footer {
   background: var(--white);
   width: 100%;
   height: 40px;
@@ -410,7 +431,7 @@ li a:hover:not(.active) svg, li a:hover:not(.active) img {
 
 .card-heading a:hover span {
   color: var(--primary-color);
-}
+} */
 
 /*-------------------------------------------------------------------------------------------*/
 
@@ -449,7 +470,8 @@ button {
   padding: 0 8px;
 }
 
-.search-bar {
+.search-bar,
+.search-bar2 {
   background: hsla(0, 0%, 100%, .3);
   height: 32px;
   line-height: 32px;
@@ -463,7 +485,17 @@ button {
   border: none;
   color: var(--white);
 }
+.search-bar2 input {
+  background: #79D299;
+}
 
+.search-bar:hover {
+  background: hsla(0, 0%, 100%, .4);
+}
+
+.search-bar:hover input {
+  background: none;
+}
 .cursor-pointer {
   cursor: pointer;
 }

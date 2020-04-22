@@ -75,7 +75,9 @@
 .p-0 {
     padding: 0 !important;
 }
-
+.p-04 {
+    padding: 4px !important;
+}
 .p-05 {
     padding: 5px !important;
 }
@@ -372,7 +374,10 @@
 }
 
 /* Margin Left Right */
-
+.mlr-04 {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+}
 .mlr-05 {
     margin-left: 5px !important;
     margin-right: 5px !important;
