@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   /*transition: 0.3s all ease-in-out;
   -moz-transition: 0.3s all ease-in-out;
   -ms-transition: 0.3s all ease-in-out;
@@ -21,7 +22,7 @@
 
 html, body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :focus {
@@ -29,7 +30,7 @@ html, body {
 }
 
 body {
-  background: #f6f6f6;
+  background: rgb(75, 191, 107);
   font-size: 14px;
   color: var(--secondary-color);
 }
@@ -123,9 +124,9 @@ a {
   font-size: 14px;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 .relative {
   position: relative !important;
@@ -152,11 +153,41 @@ a:hover {
 }
 
 .header {
-  background: var(--white);
-  height: 55px;
+  background: rgba(0, 0, 0, .15);
+  width: 100%;
+  height: 40px;
+  padding: 0 4px;
   position: fixed;
   z-index: 9999;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.left-bx {
+  width: 30%;
+}
+.middle-bx {
+  width: 40%;
+}
+.path {
+  fill: rgb(144,206,169);
+}
+.middle-bx strong {
+  color: rgb(144,206,169);
+}
+.middle-bx:hover .path,
+.middle-bx:hover strong {
+  fill: var(--white);
+  color: var(--white);
+}
+.right-bx {
+  width: 30%;
+}
+.middle-bx a {
+  color: var(--white);
+  font-size: 20px;
+}
+.middle-bx a strong {
+  font-family: 'Courgette', cursive;
 }
 
 .logo {
@@ -168,14 +199,18 @@ a:hover {
 }
 
 .profile-bx {
-  color: inherit;
+  background: #dfe1e6;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #172b4d;
 }
 
 .profile-bx:hover {
   text-decoration: none;
 }
 
-.profile-bx:hover strong, .profile-bx:hover span {
+/* .profile-bx:hover strong, .profile-bx:hover span {
   color: var(--primary-color);
 }
 
@@ -186,7 +221,7 @@ a:hover {
   height: 40px;
   border-radius: 5px;
   overflow: hidden;
-}
+} */
 
 .title {
   color: var(--dark-gray);
@@ -210,6 +245,7 @@ a:hover {
   right: 0;
   visibility: hidden;
 }
+
 
 /*-------------------------------------------------------------------------------------------*/
 
@@ -347,6 +383,45 @@ button {
   border-radius: 5px;
   border: 1px solid var(--primary-color);
   color: var(--white);
+}
+
+.btn-icon {
+  background: hsla(0, 0%, 100%, .3);
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 3px;
+  border: 0;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-icon:hover {
+  background: hsla(0, 0%, 100%, .2);
+}
+
+.btn-icon.btn-icon2 {
+  width: initial;
+  padding: 0 8px;
+}
+
+.search-bar {
+  background: hsla(0, 0%, 100%, .3);
+  height: 32px;
+  line-height: 32px;
+  padding: 0 8px;
+  border-radius: 3px;
+}
+
+.search-bar input {
+  background: #71BE8D;
+  margin-right: 8px;
+  border: none;
+  color: var(--white);
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 
 /*-------------------------------------------------------------------------------------------*/
