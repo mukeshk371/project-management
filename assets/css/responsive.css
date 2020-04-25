@@ -1,0 +1,33 @@
+.hamburger-btn,
+.sub-header-search {
+    display: none;
+} 
+
+@media only screen and (max-width: 768px) {
+    .btn-icon, .search-bar, .divider {
+        display: none;
+    }
+    .hamburger-btn {
+        padding: 0 8px;
+        display: flex;
+    }
+    .sub-header-search, .add-list-btn, .search-bar2 {
+        display: flex;
+    }
+    .left-bx, .right-bx {
+        width: 15%;
+    }
+    .middle-bx {
+        width: 70%;
+        text-align: center;
+    }
+    .task-card {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .task-card {
+        width: 100%;
+    }
+}

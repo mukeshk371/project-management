@@ -26,7 +26,7 @@ function addRow() {
     card.appendChild(addBtn);
 
     var cardColumn = document.createElement('div');
-    cardColumn.classList.add('width-25');
+    cardColumn.classList.add('task-card');
     cardColumn.classList.add('p-04');
     cardColumn.appendChild(card);
 
@@ -42,6 +42,6 @@ function addCard() {
     cardList.classList.add('mb-1');
     cardList.innerHTML = cardName;
     var card = document.getElementById('card');
-    console.log(card.children);
+    // console.log(card.children);
     card.childNodes[1].appendChild(cardList);
 }
