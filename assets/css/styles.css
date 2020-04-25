@@ -44,7 +44,7 @@ body {
 }
 
 .body-div {
-  padding: 92px 4px 4px 4px;
+  padding: 86px 4px 4px 4px;
 }
 
 /* Alignments */
@@ -278,7 +278,7 @@ a {
 .sub-header {
   background: #5CC06C;
   width: 100%;
-  height: 56px;
+  height: 50px;
   padding: 0 8px;
   position: fixed;
   top: 40px;
