@@ -7,9 +7,12 @@ function addRow() {
 
     var addCardBtn = document.createElement('input');
     addCardBtn.setAttribute('placeholder', 'Add a Card');
+    addCardBtn.classList.add('task-card-input');
+    addCardBtn.classList.add('mr-05');
     addCardBtn.setAttribute('id', 'task-name')
 
     var addBtn = document.createElement('button');
+    addBtn.classList.add('btn-primary');
     addBtn.innerHTML = 'Add';
     addBtn.setAttribute('onclick', 'addCard();');
 
