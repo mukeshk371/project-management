@@ -14,7 +14,15 @@ function addRow() {
     var addBtn = document.createElement('button');
     addBtn.classList.add('btn-primary');
     addBtn.innerHTML = 'Add';
-    addBtn.setAttribute('onclick', 'addCard();');
+    addBtn.addEventListener('click', function addCard() {
+        var cardName = addCardBtn.value;
+        var cardList = document.createElement('div');
+        cardList.classList.add('card');
+        cardList.classList.add('p-1');
+        cardList.classList.add('mb-1');
+        cardList.innerHTML = cardName;
+        cardBody.appendChild(cardList);
+    });
 
     var cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
@@ -37,14 +45,3 @@ function addRow() {
     cardBox.appendChild(cardColumn);
 }
 
-function addCard() {
-    var cardName = document.getElementById('task-name').value;
-    var cardList = document.createElement('div');
-    cardList.classList.add('card');
-    cardList.classList.add('p-1');
-    cardList.classList.add('mb-1');
-    cardList.innerHTML = cardName;
-    var card = document.getElementById('card');
-    // console.log(card.children);
-    card.childNodes[1].appendChild(cardList);
-}
