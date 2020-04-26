@@ -14,7 +14,7 @@ function addRow() {
     var addBtn = document.createElement('button');
     addBtn.classList.add('btn-primary');
     addBtn.innerHTML = 'Add';
-    addBtn.addEventListener('click', function addCard() {
+    addBtn.addEventListener('click', function() {
         var taskName = addCardBtn.value;
         var cardList = document.createElement('div');
         cardList.classList.add('card');
