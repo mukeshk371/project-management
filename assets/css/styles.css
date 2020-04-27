@@ -22,6 +22,7 @@
 
 html, body {
   height: 100%;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -50,15 +51,15 @@ body {
 /* Alignments */
 
 .text-left {
-  text-align: left !important;
+  text-align: left;
 }
 
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 .hide {
@@ -67,6 +68,10 @@ body {
 
 .d-block {
   display: block;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .d-inlineblock {
@@ -516,6 +521,13 @@ button {
   padding: 0 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+.error-text {
+  margin-top: 4px;
+  color: red;
+  display: none;
+  font-size: 11px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
