@@ -525,7 +525,7 @@ button {
 
 .error-text {
   margin-top: 4px;
-  color: red;
+  color: #d74e4e;
   display: none;
   font-size: 11px;
 }
