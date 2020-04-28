@@ -393,9 +393,36 @@ li a:hover:not(.active) svg, li a:hover:not(.active) img {
 }
 
 .task-card {
-  width: 25%;
+  width: 100%;
 }
 
+.task-box {
+  width: 33.33%;
+}
+
+.card-body .card {
+  background: var(--white);
+  margin-bottom: 10px;
+}
+.card-body .card:last-child {
+  margin-bottom: 0;
+}
+.card-header {
+  height: 49px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}
+
+.card-header strong {
+  width: 90%;
+  font-size: 16px;
+}
+.card-footer {
+  border-top: 1px dashed #ccc;
+}
 /* .card-header, .card-footer {
   background: var(--white);
   width: 100%;
@@ -477,6 +504,13 @@ button {
 .btn-icon.btn-icon2 {
   width: initial;
   padding: 0 8px;
+}
+
+.card-header .btn-remove {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .search-bar, .search-bar2 {
